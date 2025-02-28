@@ -8,38 +8,157 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/viewName"
-        android:layout_width="wrap_content"
+        android:id="@+id/viewName_tv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/cadastro"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textSize="25dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp" />
+        android:textSize="25sp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_purple"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
-        android:id="@+id/labelInput"
-        android:layout_width="wrap_content"
+        android:id="@+id/labelName_tv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Digite seu nome:"
+        android:text="@string/nome_completo"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/viewName"
+        app:layout_constraintTop_toBottomOf="@id/viewName_tv"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/nameIn"
+        android:id="@+id/name_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
-        android:hint="Digite aqui"
-        app:layout_constraintTop_toBottomOf="@id/labelInput"
+        android:autofillHints=""
+        android:hint="@string/digite_seu_nome_completo_aqui"
+        app:layout_constraintTop_toBottomOf="@id/labelName_tv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/labelTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone"
+        app:layout_constraintTop_toBottomOf="@id/name_et"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
 
+    <EditText
+        android:id="@+id/telefone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_seu_telefone_aqui"
+        app:layout_constraintTop_toBottomOf="@id/labelTelefone"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        />
+    <TextView
+        android:id="@+id/labelEmail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/e_mail"
+        app:layout_constraintTop_toBottomOf="@id/telefone_et"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelEmail_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/digite_seu_email_aqui"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        />
+
+    <CheckBox
+        android:id="@+id/newsletter_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/email_et"
+        android:text="@string/ingressar_na_lista_de_e_mails"
+        android:layout_marginStart="16dp"
+        />
+
+    <TextView
+        android:id="@+id/sexo_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sexo"
+        app:layout_constraintTop_toBottomOf="@id/newsletter_cb"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        />
+    <RadioGroup
+        android:id="@+id/sexo_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/sexo_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/sexoM_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino"/>
+
+        <RadioButton
+            android:id="@+id/sexoF_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feminino"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/labelCidade_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cidade"
+        app:layout_constraintTop_toBottomOf="@id/sexo_radio_group"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        />
+
+    <EditText
+        android:id="@+id/cidade_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_sua_cidade_aqui"
+        app:layout_constraintTop_toBottomOf="@id/labelCidade_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cidade_et"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/unidades_federativas"
+        android:background="@drawable/border_solid_black"
+        android:spinnerMode="dropdown"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

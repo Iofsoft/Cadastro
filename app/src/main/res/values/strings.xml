@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">Cadastro</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="nome_completo">Nome Completo:</string>
+    <string name="digite_seu_nome_completo_aqui">Digite seu nome completo aqui</string>
+    <string name="telefone">Telefone:</string>
+    <string name="digite_seu_telefone_aqui">Digite seu telefone aqui</string>
+    <string name="e_mail">E-Mail:</string>
+    <string name="digite_seu_email_aqui">Digite seu email aqui</string>
+    <string name="ingressar_na_lista_de_e_mails">Ingressar na lista de e-mails ?</string>
+    <string name="sexo">Sexo:</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="cidade">Cidade:</string>
+    <string name="digite_sua_cidade_aqui">Digite sua Cidade aqui</string>
+
+    <string-array name="unidades_federativas">
+        <item>Acre</item>
+        <item>Alagoas</item>
+        <item>Amapá</item>
+        <item>Amazonas</item>
+        <item>Bahia</item>
+        <item>Ceará</item>
+        <item>Distrito Federal</item>
+        <item>Espírito Santo</item>
+        <item>Goiás</item>
+        <item>Maranhão</item>
+        <item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item>
+        <item>Minas Gerais</item>
+        <item>Pará</item>
+        <item>Paraíba</item>
+        <item>Paraná</item>
+        <item>Pernambuco</item>
+        <item>Piauí</item>
+        <item>Rio de Janeiro</item>
+        <item>Rio Grande do Norte</item>
+        <item>Rio Grande do Sul</item>
+        <item>Rondônia</item>
+        <item>Roraima</item>
+        <item>Santa Catarina</item>
+        <item>São Paulo</item>
+        <item>Sergipe</item>
+        <item>Tocantins</item>
+    </string-array>
 </resources>
